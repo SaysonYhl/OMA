@@ -1,7 +1,10 @@
 package com.itel.OrderManagementApplication.order;
 
+import lombok.Getter;
+
 public class OrderDetails {
-    long orderId;
-    long productId;
-    int quantity;
+
+    @Getter long orderId;
+    @Getter long productId;
+    @Getter int quantity;
 }

@@ -1,12 +1,16 @@
 package com.itel.OrderManagementApplication.order;
 
+import lombok.Getter;
+
 import java.time.LocalDateTime;
 import java.util.List;
 
 public class Order {
 
-    Long id;
-    List<OrderDetails> orderDetailsList;
-    double totalCost;
-    LocalDateTime dateOrdered;
+    @Getter Long id;
+    @Getter List<OrderDetails> orderDetailsList;
+    @Getter OrderStatus status;
+    @Getter double totalCost;
+    @Getter LocalDateTime dateOrdered;
+
 }
